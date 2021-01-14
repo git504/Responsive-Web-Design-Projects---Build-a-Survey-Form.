@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Easy Rider Survey Form</title>
+</head>
+
+
+<body>
+    <h1 id="title">Tell us more about "Easy Rider" (1969)</h1><br>
+        <p id="description">A survey form build in HTML <em>"from scratch"</em> 
+            <br>about the movie <strong>"Easy Rider"</strong> (1969)</p><br>
+            <form id="survey-form">
+ 
+                <label id="name-label">Name:</label>
+                <input type="text" name="name" id="name" required placeholder="First Name"></input><br>
+
+                <label id="email-label">E-mail:</label>
+                <input type="email" name="mail" id="email" required placeholder="Best E-mail"></input><br>
+
+                <label id="number-label">Number:</label>
+                <input type="number" name="number" id="number" min="0" max="10" required placeholder="Number"></input><br>
+    
+   <label id="favorite-actors-label">What's your favorite actor ?
+    <select id="dropdown" name="actors">
+        <option value="Peter Fonda">Peter Fonda</option>
+        <option value="Dennis Hopper">Dennis Hopper</option>
+        <option value="Jack Nicholson">Jack Nicholson</option>
+        <option value="other">Other</option><br>
+    </select>  
+    <br> 
+
+    <br>
+    <div id="radio-area">
+        <label id="worthashot">Would you recommend Easy Rider to a friend?</label>
+        <br>
+        <input type="radio" class="radio-inline" name="worthashot" value="worthashot">Yes<br>
+        <input type="radio" class="radio-inline" name="worthashot" value="Ohlala">No<br>
+        <input type="radio" class="radio-inline" name="worthashot" value="Wait A Minute Chester">Wait A Minute Chester
+    </div>
+    <br>
+
+    <div id="checkbox-area">
+      <label id="moto-type-label">What kind of motorcycles are in the film?</label>
+      <br>
+      <input type="checkbox" name="vehicle1" value="Chopper">Chopper Motorcycle<br>
+      <input type="checkbox" name="vehicle2" value="Touring">Touring Motorcycle<br>
+      <input type="checkbox" name="vehicle3" value="Standard" checked>Standard Motorcycle<br>
+    </div>
+    <br>
+
+    <textarea placeholder="Additional Comments"></textarea><br>
+    <input type="submit" id="submit">
+  </form>
+
+  <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
